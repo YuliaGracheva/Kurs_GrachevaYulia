@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="View\WindowAnaliz.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\WindowClient.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\WindowMaster.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\WindowNewClient.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\WindowNewEmployee.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\WindowNewRecord.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\WindowNewServices.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\WindowNewTimesheet.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\WindowRecord.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\WindowReport.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\WindowServices.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="DictionaryApp.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\Dictionary.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\WindowAnaliz.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\WindowClient.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\WindowMaster.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\WindowNewClient.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\WindowNewEmployee.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\WindowNewRecord.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\WindowNewServices.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\WindowNewTimesheet.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\WindowRecord.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\WindowReport.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\WindowServices.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>

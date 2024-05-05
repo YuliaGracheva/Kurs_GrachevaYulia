@@ -1,0 +1,58 @@
+﻿<Window x:Class="kursovoi.View.WindowNewEmployee" WindowStartupLocation="CenterScreen"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:kursovoi.View"
+        mc:Ignorable="d"
+        WindowStyle="None" Height="600" Width="600">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="300"></ColumnDefinition>
+            <ColumnDefinition Width="300"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="53"></RowDefinition>
+            <RowDefinition Height="51"></RowDefinition>
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition Height="40"></RowDefinition>
+            <RowDefinition Height="60"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.Background>
+            <ImageBrush ImageSource="pack://application:,,,/res/img/addimg.png"></ImageBrush>
+        </Grid.Background>
+        <TextBlock FontWeight="Bold" Grid.Row="1" Grid.ColumnSpan="2"  FontSize="40" FontStyle="Oblique" Text="Добавление сотрудника" Margin="35,0,0,0"></TextBlock>
+        <TextBlock Grid.Row="3" Text="Код:" FontSize="26" HorizontalAlignment="Center" VerticalAlignment="Center" Height="38" Width="56"/>
+        <TextBlock Grid.Row="4" Text="Фамилия:" FontSize="26" HorizontalAlignment="Center" VerticalAlignment="Center" Height="40" Width="132"/>
+        <TextBlock Grid.Row="5" Text="Имя:" FontSize="26" HorizontalAlignment="Center" VerticalAlignment="Center" Height="39" Width="64"/>
+        <TextBlock Grid.Row="6" Text="Отчество:" FontSize="26" HorizontalAlignment="Center" VerticalAlignment="Center" Height="38" Width="132"/>
+        <TextBlock Grid.Row="7" Text="Контактный номер:" FontSize="26" HorizontalAlignment="Center" VerticalAlignment="Center" Height="40" Width="236"/>
+        <TextBlock Grid.Row="8" Text="Спецализация:" FontSize="26" HorizontalAlignment="Center" VerticalAlignment="Center" Height="40" Width="183"/>
+        <TextBox Text="{Binding EmployeeId}" x:Name="TbEmployee" Grid.Row="3" Grid.Column="1" Margin="10,10,56,10" Background="AliceBlue"></TextBox>
+        <TextBox Text="{Binding EmployeeSurname}" x:Name="TbEmployeeSurname" Grid.Row="4" Grid.Column="1" Margin="10,10,56,10" Background="AliceBlue"></TextBox>
+        <TextBox Text="{Binding EmployeeName}" x:Name="TbEmployeeName" Grid.Row="5" Grid.Column="1" Margin="10,10,56,10" Background="AliceBlue"></TextBox>
+        <TextBox Text="{Binding EmployeePatronymic}" x:Name="TbEmployeePatronymic" Grid.Row="6" Grid.Column="1" Margin="10,10,56,10" Background="AliceBlue"></TextBox>
+        <TextBox Text="{Binding EmployeeContactNumber}" x:Name="TbEmployeeContactNamber" Grid.Row="7" Grid.Column="1" Margin="10,10,56,10" Background="AliceBlue"></TextBox>
+        <TextBox Text="{Binding EmployeeSpecalization}" x:Name="TbEmployeeSpecalization" Grid.Row="8" Grid.Column="1" Margin="10,10,56,10" Background="AliceBlue"></TextBox>
+        <Button FontWeight="Bold" Grid.Column="0" Grid.Row="10" Background="CadetBlue" Click="BtSave_Click" Content="Сохранить" Foreground="White" FontSize="30" Margin="35,10,32,-6">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="30"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button FontWeight="Bold" Grid.Column="1" Grid.Row="10" Background="CadetBlue" Click="BtCancel_Click" Content="Отменить" Foreground="White" FontSize="30" Margin="18,10,56,-6">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="30"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+    </Grid>
+</Window>

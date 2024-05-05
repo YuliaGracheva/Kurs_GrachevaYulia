@@ -1,0 +1,57 @@
+﻿<Window x:Class="kursovoi.View.WindowNewRecord" WindowStartupLocation="CenterScreen"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:kursovoi.View"
+        mc:Ignorable="d"
+        WindowStyle="None" Height="700" Width="600">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="300"></ColumnDefinition>
+            <ColumnDefinition Width="300"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="60"></RowDefinition>
+            <RowDefinition Height="60"></RowDefinition>
+            <RowDefinition Height="60"></RowDefinition>
+            <RowDefinition Height="60"></RowDefinition>
+            <RowDefinition Height="60"></RowDefinition>
+            <RowDefinition Height="60"></RowDefinition>
+            <RowDefinition Height="60"></RowDefinition>
+            <RowDefinition Height="60"></RowDefinition>
+            <RowDefinition Height="60"></RowDefinition>
+            <RowDefinition Height="120"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.Background>
+            <ImageBrush ImageSource="pack://application:,,,/res/img/addimg.png"></ImageBrush>
+        </Grid.Background>
+        <TextBlock FontWeight="Bold" Grid.Row="1" Grid.ColumnSpan="2"  FontSize="40" FontStyle="Oblique" Text="Запись" Margin="35,0,0,0"></TextBlock>
+        <TextBlock Grid.Row="2" Text="Код:" FontSize="26" HorizontalAlignment="Center" VerticalAlignment="Center" Height="38" Width="56"/>
+        <TextBlock Grid.Row="3" Text="Дата:" FontSize="26" HorizontalAlignment="Center" VerticalAlignment="Center" Height="40" Width="70"/>
+        <TextBlock Grid.Row="4" Text="Время:" FontSize="26" HorizontalAlignment="Center" VerticalAlignment="Center" Height="40" Width="86"/>
+        <TextBlock Grid.Row="7" Text="Фамилия мастера:" FontSize="26" HorizontalAlignment="Center" VerticalAlignment="Center" Height="40" Width="231" Margin="37,0,0,0"/>
+        <TextBlock Grid.Row="5" Text="Название услуги:" FontSize="26" HorizontalAlignment="Center" VerticalAlignment="Center" Height="40" Width="231" Margin="37,0,0,0"/>
+        <TextBlock Grid.Row="6" TextWrapping="Wrap" Text="Контактный номер клиента:" FontSize="26" HorizontalAlignment="Center" VerticalAlignment="Center" Height="70" Width="233" Margin="35,0,0,0"/>
+        <TextBox Text="{Binding RecordId}" x:Name="TbRecord" Grid.Row="2" Grid.Column="1" Margin="10,10,56,10" Background="AliceBlue"></TextBox>
+        <TextBox Text="{Binding RecordDate, StringFormat=\{0:dd.MM.yy\}}" x:Name="TbRecordDate" Grid.Row="3" Grid.Column="1" Margin="10,10,56,10" Background="AliceBlue"></TextBox>
+        <TextBox Text="{Binding RecordTime}" x:Name="TbRecordTime" Grid.Row="4" Grid.Column="1" Margin="10,10,56,10" Background="AliceBlue"></TextBox>
+        <ComboBox  x:Name="TbEmployee" Grid.Row="7" Grid.Column="1" Margin="10,10,56,10" Background="AliceBlue" DisplayMemberPath="EmployeeSurname" ></ComboBox>
+        <ComboBox  x:Name="TbClient" Grid.Row="6" Grid.Column="1" Margin="10,10,56,10" Background="AliceBlue" DisplayMemberPath="ClientContactNumber" ></ComboBox>
+        <ComboBox  x:Name="TbServices" Grid.Row="5" Grid.Column="1" Margin="10,10,56,10" Background="AliceBlue" DisplayMemberPath="ServicesName" ></ComboBox>
+        <Button FontWeight="Bold" Grid.Column="0" Grid.Row="9" Background="CadetBlue" Click="BtSave_Click" Content="Сохранить" Foreground="White" FontSize="30" Margin="35,10,32,31">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="30"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button FontWeight="Bold" Grid.Column="1" Grid.Row="9" Background="CadetBlue" Click="BtCancel_Click" Content="Отменить" Foreground="White" FontSize="30" Margin="18,10,56,31">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="30"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+    </Grid>
+</Window>

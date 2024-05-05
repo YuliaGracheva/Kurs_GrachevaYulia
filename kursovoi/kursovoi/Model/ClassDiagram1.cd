@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="kursovoi.Model.Analiz">
+    <Position X="2.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAQAAAIAEAAAAAIAAAQAAAkEIAEAAIAAABABAAAAA=</HashCode>
+      <FileName>Model\Analiz.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="kursovoi.Model.Client">
+    <Position X="6" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAAAAAAAAoAAAAAAAgAAAAAAQQAAABBAFAAA=</HashCode>
+      <FileName>Model\Client.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="kursovoi.Model.Employee">
+    <Position X="7.75" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIJABAAAACAAAAIAAAAAAAgAAAAAAYAAAAABAGABA=</HashCode>
+      <FileName>Model\Employee.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="kursovoi.Model.Record">
+    <Position X="4.25" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAAAgAAAApAAAIACAgAAAAAAAAAABAAICAAA=</HashCode>
+      <FileName>Model\Record.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="kursovoi.Model.RecordDPO">
+    <Position X="9.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQBAAAAgAgAAJAAAAAAAgAAAAABAAAABABIBAAA=</HashCode>
+      <FileName>Model\RecordDPO.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="kursovoi.Model.Services">
+    <Position X="13" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAgCAAAgAkIBAgIAAAggIAAAAAAAAQABACAAA=</HashCode>
+      <FileName>Model\Services.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="kursovoi.Model.Timesheet">
+    <Position X="11.25" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAIACpAAEAAAAgAAAAAgAAAAQABgCAAA=</HashCode>
+      <FileName>Model\Timesheet.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="kursovoi.Model.TimesheetDPO">
+    <Position X="14.75" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAIAAAAAAAAAMCCoAAEAAAAgAABAAAAAAACABAAAAA=</HashCode>
+      <FileName>Model\TimesheetDPO.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="kursovoi.Helper.FindTimesheet">
+    <Position X="4.25" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgA=</HashCode>
+      <FileName>Helper\FindTimesheet.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="kursovoi.Helper.FindRecord">
+    <Position X="6" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgA=</HashCode>
+      <FileName>Helper\FindRecord.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="kursovoi.Helper.RelayCommand">
+    <Position X="8.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAACAAQAAEAEAABAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Helper\ReplayCommand.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="kursovoi.Model.ClientLast">
+    <Position X="10.5" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAABAEIAAAAEAAgAAAAQAQAAAAABAEAAQ=</HashCode>
+      <FileName>Model\ClientLast.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="kursovoi.Model.MyDbContext">
+    <Position X="14.75" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>sIAAEAAAAQAAAQABACQAAAAECAAAAAAAQAAAAABAAAA=</HashCode>
+      <FileName>Model\MyDbContext.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="kursovoi.Model.ServicesDPO">
+    <Position X="12.75" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIABAgCAAAgCkIBAgIAAAggIAAAAAAAAAABAAAAA=</HashCode>
+      <FileName>Model\ServicesDPO.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
